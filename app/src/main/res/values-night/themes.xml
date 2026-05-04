@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <style name="Base.Theme.MemoCards" parent="Theme.Material3.DayNight.NoActionBar">
-        <item name="colorPrimary">#FF8F8F</item>
+        <item name="colorPrimary">#9B85B5</item>
         <item name="android:windowBackground">#D2D2D2</item>
     </style>
     <style name="Theme.MemoCards" parent="Base.Theme.MemoCards" />
@@ -10,5 +10,10 @@
         <item name="android:textSize">14sp</item>
         <item name="android:textAllCaps">true</item>
         <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="RadioButtonStyle" parent="Theme.AppCompat.Light">
+        <item name="android:colorControlNormal">#9B85B5</item>
+        <item name="android:colorControlActivated">#9B85B5</item>
     </style>
 </resources>

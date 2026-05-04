@@ -13,6 +13,7 @@ import android.content.Context
 import android.opengl.GLES20
 import android.opengl.GLSurfaceView
 import android.opengl.Matrix
+import android.util.Log
 import androidx.core.content.edit
 import androidx.room.Room.databaseBuilder
 import javax.microedition.khronos.egl.EGLConfig
@@ -56,7 +57,10 @@ class FavoritesRenderer(private val context: Context) : GLSurfaceView.Renderer {
 
 		val requests = favoritesDatabase.requests()
 		val favorites = requests.all
-		val favoritesPaths = favorites.mapNotNull { it.path }
+		//favorites.forEach { Log.i("memo", "before favorites path: ${it.path}") }
+		// заменить формат jpg файлов на webp для совместимости с новой версией, где используется формат webp
+		val favoritesPaths = favorites.mapNotNull { it.path.replace("jpg", "webp") }
+		//favoritesPaths.forEach { Log.i("memo", "after favorites path: $it") }
 		val cardsCreator = CardsCreator()
 
 		val (cardsFromDB, textures) = cardsCreator.createCardsFromDB(context, scale, favoritesPaths)
@@ -114,7 +118,7 @@ class FavoritesRenderer(private val context: Context) : GLSurfaceView.Renderer {
 			// удалить ранее созданные текстуры для больших карточек
 			GLES20.glDeleteTextures(largeTextureIds.size, largeTextureIds, 0)
 
-			val favoritesPaths = favorites.mapNotNull { it.path }
+			val favoritesPaths = favorites.mapNotNull { it.path.replace("jpg", "webp") }
 			val cardsCreator = CardsCreator()
 
 			val (cardsFromDB, _) = cardsCreator.createCardsFromDB(context, scale, favoritesPaths)

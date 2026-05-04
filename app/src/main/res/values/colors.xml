@@ -4,7 +4,7 @@
 
     <color name="game_button">#88CC6C</color>
     <color name="game_button_pressed">#96D97A</color>
-    <color name="button_pressed">#87BDD3</color>
+    <color name="button_pressed">#AF9AC5</color>
     <color name="disable_button">#B9B9B9</color>
 
     <color name="statistics_date_head">#BBE6A8</color>

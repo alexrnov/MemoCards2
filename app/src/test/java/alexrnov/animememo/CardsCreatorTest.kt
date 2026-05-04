@@ -46,7 +46,7 @@ class CardsCreatorTest {
 			assertFalse(card.value.isOpen())
 			assertFalse(card.value.isRotationProcess())
 			assertTrue(card.value.frontPath.contains("front"))
-			assertTrue(card.value.frontPath.contains(".jpg"))
+			assertTrue(card.value.frontPath.contains(".webp"))
 		}
 	}
 
@@ -59,10 +59,10 @@ class CardsCreatorTest {
 	@Test
 	fun createCardsFromDB() {
 		val favoritesPaths = listOf(
-			"front/89.jpg",
-			"front/186.jpg",
-			"front/146.jpg",
-			"front/114.jpg"
+			"front/89.webp",
+			"front/186.webp",
+			"front/146.webp",
+			"front/114.webp"
 		)
 
 		val (cards, _) = cardsCreator.createCardsFromDB(context, 1.0f, favoritesPaths)
@@ -75,7 +75,7 @@ class CardsCreatorTest {
 			assertEquals(index, card.key)
 			assertFalse(card.value.isOpen())
 			assertFalse(card.value.isRotationProcess())
-			assertTrue(card.value.frontPath.contains(".jpg"))
+			assertTrue(card.value.frontPath.contains(".webp"))
 		}
 	}
 }

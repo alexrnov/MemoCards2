@@ -78,6 +78,7 @@
                         android:paddingLeft="0dp"
                         android:paddingRight="6dp"
                         android:minHeight="32dp"
+                        android:theme="@style/RadioButtonStyle"
                         android:gravity="center_vertical"
                         android:text="@string/black_color"
                         android:textColor="@color/description_text"
@@ -92,6 +93,7 @@
                         android:paddingLeft="0dp"
                         android:paddingRight="6dp"
                         android:minHeight="32dp"
+                        android:theme="@style/RadioButtonStyle"
                         android:gravity="center_vertical"
                         android:text="@string/gray_color"
                         android:textColor="@color/description_text"
@@ -106,6 +108,7 @@
                         android:paddingLeft="0dp"
                         android:paddingRight="6dp"
                         android:minHeight="32dp"
+                        android:theme="@style/RadioButtonStyle"
                         android:gravity="center_vertical"
                         android:text="@string/white_color"
                         android:textColor="@color/description_text"
@@ -162,6 +165,7 @@
                         android:paddingLeft="0dp"
                         android:paddingRight="6dp"
                         android:minHeight="32dp"
+                        android:theme="@style/RadioButtonStyle"
                         android:gravity="center_vertical"
                         android:text="@string/stone_material"
                         android:textColor="@color/description_text"
@@ -176,6 +180,7 @@
                         android:paddingLeft="0dp"
                         android:paddingRight="6dp"
                         android:minHeight="32dp"
+                        android:theme="@style/RadioButtonStyle"
                         android:gravity="center_vertical"
                         android:text="@string/plastic_material"
                         android:textColor="@color/description_text"
@@ -190,6 +195,7 @@
                         android:paddingLeft="0dp"
                         android:paddingRight="6dp"
                         android:minHeight="32dp"
+                        android:theme="@style/RadioButtonStyle"
                         android:gravity="center_vertical"
                         android:text="@string/pattern_material"
                         android:textColor="@color/description_text"
@@ -246,6 +252,7 @@
                         android:paddingLeft="0dp"
                         android:paddingRight="6dp"
                         android:minHeight="32dp"
+                        android:theme="@style/RadioButtonStyle"
                         android:textColor="@color/description_text"
                         android:textSize="16sp"
                         android:typeface="sans" />
@@ -258,6 +265,7 @@
                         android:paddingLeft="0dp"
                         android:paddingRight="6dp"
                         android:minHeight="32dp"
+                        android:theme="@style/RadioButtonStyle"
                         android:textColor="@color/description_text"
                         android:textSize="16sp"
                         android:typeface="sans" />
@@ -270,6 +278,7 @@
                         android:paddingLeft="0dp"
                         android:paddingRight="6dp"
                         android:minHeight="32dp"
+                        android:theme="@style/RadioButtonStyle"
                         android:textColor="@color/description_text"
                         android:textSize="16sp"
                         android:typeface="sans" />
@@ -282,6 +291,7 @@
                         android:paddingLeft="0dp"
                         android:paddingRight="6dp"
                         android:minHeight="32dp"
+                        android:theme="@style/RadioButtonStyle"
                         android:textColor="@color/description_text"
                         android:textSize="16sp"
                         android:typeface="sans" />
@@ -336,6 +346,7 @@
                         android:paddingLeft="0dp"
                         android:paddingRight="6dp"
                         android:minHeight="32dp"
+                        android:theme="@style/RadioButtonStyle"
                         android:textColor="@color/description_text"
                         android:typeface="sans"
                         android:textSize="16sp" />
@@ -348,6 +359,7 @@
                         android:paddingLeft="0dp"
                         android:paddingRight="6dp"
                         android:minHeight="32dp"
+                        android:theme="@style/RadioButtonStyle"
                         android:textColor="@color/description_text"
                         android:typeface="sans"
                         android:textSize="16sp" />
@@ -360,6 +372,7 @@
                         android:paddingLeft="0dp"
                         android:paddingRight="6dp"
                         android:minHeight="32dp"
+                        android:theme="@style/RadioButtonStyle"
                         android:textColor="@color/description_text"
                         android:typeface="sans"
                         android:textSize="16sp" />

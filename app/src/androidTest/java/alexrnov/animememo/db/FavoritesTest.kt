@@ -35,7 +35,7 @@ class FavoritesTest {
 	@Test
 	@Throws(Exception::class)
 	fun writeAndReadStatisticsEntity() {
-		val path = "/test_path/file.jpg"
+		val path = "/test_path/file.webp"
 		val favoriteEntity = FavoriteEntity(favoritesRequests.lastCardId + 1, path)
 		favoritesRequests.insert(favoriteEntity)
 
@@ -49,8 +49,8 @@ class FavoritesTest {
 	@Test
 	@Throws(Exception::class)
 	fun addAndDeleteStatisticsEntity() {
-		val path = "/test_path/file.jpg"
-		val otherPath = "/test_path/otherFile.jpg"
+		val path = "/test_path/file.webp"
+		val otherPath = "/test_path/otherFile.webp"
 		val favoriteEntity = FavoriteEntity(favoritesRequests.lastCardId + 1, path)
 		favoritesRequests.insert(favoriteEntity)
 

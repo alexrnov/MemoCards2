@@ -44,7 +44,7 @@ class CardsCreator {
 		val frontNumbers = (1..frontCardsSize).shuffled(Random.Default).take(cardPairs)
 		val frontPictures: MutableList<String> = mutableListOf()
 		(0..cardPairs - 1).forEach {
-			frontPictures.add("front/${frontNumbers[it]}.jpg")
+			frontPictures.add("front/${frontNumbers[it]}.webp")
 		}
 		return frontPictures
 	}
@@ -53,7 +53,7 @@ class CardsCreator {
 		val material = sceneSettings.material
 		val backCardsSize = sceneSettings.backCardsSize
 		val backNumber = (1..backCardsSize).random()
-		return "back/$material/${backNumber}.jpg"
+		return "back/$material/${backNumber}.webp"
 	}
 
 	private fun getCardsWithOneBackground(
@@ -77,7 +77,7 @@ class CardsCreator {
 		val backNumbers = (1..backCardsSize).shuffled(Random.Default).take(cardQuality)
 		val backPictures = ArrayDeque<String>()
 		(0..backNumbers.size - 1).forEach {
-			backPictures.add("back/$material/${backNumbers[it]}.jpg")
+			backPictures.add("back/$material/${backNumbers[it]}.webp")
 		}
 		return backPictures
 	}
@@ -137,14 +137,13 @@ class CardsCreator {
 	}
 
 	private fun getCardsFromDB(frontPictures: List<String>, ): Set<String> {
-		val backPicture = "back/pattern/1.jpg"
-		val emptyPicture = "empty/1.jpg"
+		val emptyPicture = "empty/1.webp"
 		val cardsWithPaths: MutableList<String> = mutableListOf()
 		for (i in 0..5) {
 			if (i < frontPictures.size) {
-				cardsWithPaths.add("${i}:${frontPictures[i]}:$backPicture")
+				cardsWithPaths.add("${i}:${frontPictures[i]}:$emptyPicture")
 			} else {
-				cardsWithPaths.add("${i}:$emptyPicture:$backPicture")
+				cardsWithPaths.add("${i}:$emptyPicture:$emptyPicture")
 			}
 		}
 		return cardsWithPaths
@@ -159,7 +158,7 @@ class CardsCreator {
 	}
 
 	private fun getLargeCardsFromDB(frontPictures: List<String>, ): Set<String> {
-		val backPicture = "back/pattern/1.jpg"
+		val backPicture = "back/pattern/1.webp"
 		val cardsWithPaths: MutableList<String> = mutableListOf()
 		for (i in 0..frontPictures.size - 1) {
 			cardsWithPaths.add("${i}:${frontPictures[i]}:$backPicture")
