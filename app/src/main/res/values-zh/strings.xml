@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Main menu -->
+    <string name="start_game">游戏</string>
+    <string name="statistics">统计数据</string>
+    <string name="settings">设置</string>
+    <string name="favorites">收藏夹</string>
+    <string name="about_game">关于游戏</string>
+    <string name="exit">出口</string>
+
+    <!-- Statistics -->
+    <string name="title_date">日期/时间</string>
+    <string name="title_cards">牌</string>
+    <string name="title_errors">错误</string>
+    <string name="clear_statistics">清除</string>
+
+    <!-- Statistics dialog -->
+    <string name="statistics_dialog_text">清除游戏记录？</string>
+    <string name="statistics_empty_text">目前还没有游戏。</string>
+
+    <!-- Remove card dialog -->
+    <string name="remove_card_dialog_title">移动</string>
+    <string name="remove_card_dialog_body">从收藏夹中移除地图？</string>
+
+    <string name="yes_button">是的</string>
+    <string name="no_button">不</string>
+
+    <!-- About game -->
+    <string name="rules_title">游戏规则</string>
+    <string name="rules_description">找出错误最少的卡片对。</string>
+    <string name="favorites_description">长按已打开的卡片，即可将其添加到收藏夹列表。</string>
+
+    <string name="pictures_title">图片</string>
+    <string name="graphics_title">图形</string>
+
+    <string name="background_title">背景</string>
+    <string name="black_color">黑色的</string>
+    <string name="white_color">白色的</string>
+    <string name="gray_color">灰色的</string>
+
+    <string name="material_title">材料</string>
+    <string name="stone_material">肾炎</string>
+    <string name="plastic_material">塑料</string>
+    <string name="pattern_material">图案</string>
+
+    <string name="cards_title">卡片数量</string>
+    <string name="cards12">12</string>
+    <string name="cards16">16</string>
+    <string name="cards20">20</string>
+    <string name="cards30">30</string>
+
+    <string name="rotation_speed_title">旋转卡片</string>
+    <string name="lowSpeed">×1</string>
+    <string name="mediumSpeed">×2</string>
+    <string name="fastSpeed">×3</string>
+
+    <!-- Game snackBar -->
+    <string name="add_card_to_favorites_text">已添加到收藏夹</string>
+    <string name="card_is_already_in_favorites_text">已加入收藏夹</string>
+    <string name="full_favorites_list">收藏夹已满。</string>
+
+    <!-- Exit dialog -->
+    <string name="exit_dialog_title_pause">暂停</string>
+    <string name="exit_dialog_text_pause">返回主菜单？</string>
+    <string name="exit_dialog_text_statistics">错误数量：</string>
+</resources>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Main menu -->
+    <string name="start_game">Игра</string>
+    <string name="statistics">Статистика</string>
+    <string name="settings">Настройки</string>
+    <string name="favorites">Избранное</string>
+    <string name="about_game">Об игре</string>
+    <string name="exit">Выход</string>
+
+    <!-- Statistics -->
+    <string name="title_date">дата / время</string>
+    <string name="title_cards">карты</string>
+    <string name="title_errors">ошибки</string>
+    <string name="clear_statistics">очистить</string>
+
+    <!-- Statistics dialog -->
+    <string name="statistics_dialog_text">Очистить историю игр?</string>
+    <string name="statistics_empty_text">Еще нет игр</string>
+
+    <!-- Remove card dialog -->
+    <string name="remove_card_dialog_title">Удаление</string>
+    <string name="remove_card_dialog_body">Удалить карту из избранного?</string>
+
+    <string name="yes_button">Да</string>
+    <string name="no_button">Нет</string>
+
+    <!-- About game -->
+    <string name="rules_title">Правила игры</string>
+    <string name="rules_description">Найти пары карточек с минимальным количеством ошибок.</string>
+    <string name="favorites_description">Долгое нажатие на открытой карточке добавляет ее в список избранного.</string>
+
+    <string name="pictures_title">Изображения</string>
+    <string name="graphics_title">Графика</string>
+
+    <string name="background_title">Фон</string>
+    <string name="black_color">Черный</string>
+    <string name="white_color">Белый</string>
+    <string name="gray_color">Серый</string>
+
+    <string name="material_title">Материал</string>
+    <string name="stone_material">Нефрит</string>
+    <string name="plastic_material">Пластик</string>
+    <string name="pattern_material">Узор</string>
+
+    <string name="cards_title">Количество карт</string>
+    <string name="cards12">12</string>
+    <string name="cards16">16</string>
+    <string name="cards20">20</string>
+    <string name="cards30">30</string>
+
+    <string name="rotation_speed_title">Поворот карт</string>
+    <string name="lowSpeed">×1</string>
+    <string name="mediumSpeed">×2</string>
+    <string name="fastSpeed">×3</string>
+
+    <!-- Game snackBar -->
+    <string name="add_card_to_favorites_text">Добавлено в избранное</string>
+    <string name="card_is_already_in_favorites_text">Уже в избранном</string>
+    <string name="full_favorites_list">Список избранного заполнен</string>
+
+    <!-- Exit dialog -->
+    <string name="exit_dialog_title_pause">Пауза</string>
+    <string name="exit_dialog_text_pause">Выйти в основное меню?</string>
+    <string name="exit_dialog_text_statistics">Количество ошибок:</string>
+</resources>

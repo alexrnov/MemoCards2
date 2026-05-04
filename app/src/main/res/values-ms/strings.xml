@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Main menu -->
+    <string name="start_game">Permainan</string>
+    <string name="statistics">Statistik</string>
+    <string name="settings">Tetapan</string>
+    <string name="favorites">Kegemaran</string>
+    <string name="about_game">Rujukan</string>
+    <string name="exit">Keluar</string>
+
+    <!-- Statistics -->
+    <string name="title_date">tarikh / masa</string>
+    <string name="title_cards">kad</string>
+    <string name="title_errors">kesilapan</string>
+    <string name="clear_statistics">jelas</string>
+
+    <!-- Statistics dialog -->
+    <string name="statistics_dialog_text">Kosongkan sejarah permainan?</string>
+    <string name="statistics_empty_text">Tiada permainan lagi</string>
+
+    <!-- Remove card dialog -->
+    <string name="remove_card_dialog_title">Penyingkiran</string>
+    <string name="remove_card_dialog_body">Alih keluar peta daripada kegemaran?</string>
+
+    <string name="yes_button">Ya</string>
+    <string name="no_button">Tidak</string>
+
+    <!-- About game -->
+    <string name="rules_title">Peraturan permainan</string>
+    <string name="rules_description">Cari pasangan kad dengan bilangan ralat minimum.</string>
+    <string name="favorites_description">Menekan lama pada kad yang terbuka akan menambahkannya ke senarai kegemaran anda.</string>
+
+    <string name="pictures_title">Imej</string>
+    <string name="graphics_title">Grafik</string>
+
+    <string name="background_title">Latar Belakang</string>
+    <string name="black_color">Hitam</string>
+    <string name="white_color">Putih</string>
+    <string name="gray_color">Kelabu</string>
+
+    <string name="material_title">Bahan</string>
+    <string name="stone_material">Nefritis</string>
+    <string name="plastic_material">Plastik</string>
+    <string name="pattern_material">Corak</string>
+
+    <string name="cards_title">Bilangan kad</string>
+    <string name="cards12">12</string>
+    <string name="cards16">16</string>
+    <string name="cards20">20</string>
+    <string name="cards30">30</string>
+
+    <string name="rotation_speed_title">Putar kad</string>
+    <string name="lowSpeed">×1</string>
+    <string name="mediumSpeed">×2</string>
+    <string name="fastSpeed">×3</string>
+
+    <!-- Game snackBar -->
+    <string name="add_card_to_favorites_text">Ditambah ke kegemaran</string>
+    <string name="card_is_already_in_favorites_text">Sudah berada dalam kegemaran</string>
+    <string name="full_favorites_list">Senarai kegemaran sudah penuh</string>
+
+    <!-- Exit dialog -->
+    <string name="exit_dialog_title_pause">Jeda</string>
+    <string name="exit_dialog_text_pause">Keluar ke menu utama?</string>
+    <string name="exit_dialog_text_statistics">Bilangan ralat:</string>
+</resources>

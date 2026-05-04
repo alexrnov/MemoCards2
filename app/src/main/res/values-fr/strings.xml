@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Main menu -->
+    <string name="start_game">Jeu</string>
+    <string name="statistics">Statistiques</string>
+    <string name="settings">Paramètres</string>
+    <string name="favorites">Favoris</string>
+    <string name="about_game">référence</string>
+    <string name="exit">Sortie</string>
+
+    <!-- Statistics -->
+    <string name="title_date">date / heure</string>
+    <string name="title_cards">cartes</string>
+    <string name="title_errors">erreurs</string>
+    <string name="clear_statistics">clair</string>
+
+    <!-- Statistics dialog -->
+    <string name="statistics_dialog_text">Effacer l\'historique de jeu?</string>
+    <string name="statistics_empty_text">Il n\'y a pas encore de jeux.</string>
+
+    <!-- Remove card dialog -->
+    <string name="remove_card_dialog_title">Suppression</string>
+    <string name="remove_card_dialog_body">Supprimer la carte des favoris?</string>
+
+    <string name="yes_button">Oui</string>
+    <string name="no_button">Non</string>
+
+    <!-- About game -->
+    <string name="rules_title">Règles du jeu</string>
+    <string name="rules_description">Trouvez les paires de cartes comportant le moins d\'erreurs.</string>
+    <string name="favorites_description">Un appui long sur une carte ouverte l\'ajoute à votre liste de favoris.</string>
+
+    <string name="pictures_title">Images</string>
+    <string name="graphics_title">Graphique</string>
+
+    <string name="background_title">Arrière-plan</string>
+    <string name="black_color">Noir</string>
+    <string name="white_color">Blanc</string>
+    <string name="gray_color">Gris</string>
+
+    <string name="material_title">Matériel</string>
+    <string name="stone_material">Néphrite</string>
+    <string name="plastic_material">Plastique</string>
+    <string name="pattern_material">Modèle</string>
+
+    <string name="cards_title">Nombre de cartes</string>
+    <string name="cards12">12</string>
+    <string name="cards16">16</string>
+    <string name="cards20">20</string>
+    <string name="cards30">30</string>
+
+    <string name="rotation_speed_title">Faire tourner les cartes</string>
+    <string name="lowSpeed">×1</string>
+    <string name="mediumSpeed">×2</string>
+    <string name="fastSpeed">×3</string>
+
+    <!-- Game snackBar -->
+    <string name="add_card_to_favorites_text">Ajouté aux favoris</string>
+    <string name="card_is_already_in_favorites_text">Déjà dans les favoris</string>
+    <string name="full_favorites_list">La liste des favoris est pleine</string>
+
+    <!-- Exit dialog -->
+    <string name="exit_dialog_title_pause">Pause</string>
+    <string name="exit_dialog_text_pause">Retour au menu principal?</string>
+    <string name="exit_dialog_text_statistics">Nombre d\'erreurs:</string>
+</resources>

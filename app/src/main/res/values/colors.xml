@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="game_button">#88CC6C</color>
+    <color name="game_button_pressed">#96D97A</color>
+    <color name="button_pressed">#87BDD3</color>
+    <color name="disable_button">#B9B9B9</color>
+
+    <color name="statistics_date_head">#BBE6A8</color>
+    <color name="statistics_cards_head">#F3E8BB</color>
+    <color name="statistics_errors_head">#FBD3B3</color>
+    <color name="statistics_date_item">#DEF0D7</color>
+    <color name="statistics_cards_item">#FFF8E0</color>
+    <color name="statistics_errors_item">#FEEBDB</color>
+
+    <color name="radio_group_background">#E5E5E5</color>
+
+    <color name="title_text">#363636</color>
+    <color name="description_text">#555555</color>
+    <color name="empty_text">#8F8F8F</color>
+
+    <color name="divider">#6A6A6A</color>
+    <color name="table_divider">#C0C0C0</color>
+    <color name="blocked_background">#D51F1F1F</color>
+</resources>

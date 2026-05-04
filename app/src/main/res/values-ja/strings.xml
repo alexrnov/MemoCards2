@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Main menu -->
+    <string name="start_game">ゲーム</string>
+    <string name="statistics">統計</string>
+    <string name="settings">設定</string>
+    <string name="favorites">お気に入り</string>
+    <string name="about_game">ゲームについて</string>
+    <string name="exit">出口</string>
+
+    <!-- Statistics -->
+    <string name="title_date">日付/時刻</string>
+    <string name="title_cards">カード</string>
+    <string name="title_errors">間違い</string>
+    <string name="clear_statistics">クリア</string>
+
+    <!-- Statistics dialog -->
+    <string name="statistics_dialog_text">ゲーム履歴を消去しますか？</string>
+    <string name="statistics_empty_text">まだゲームはありません</string>
+
+    <!-- Remove card dialog -->
+    <string name="remove_card_dialog_title">除去</string>
+    <string name="remove_card_dialog_body">地図をお気に入りから削除しますか？</string>
+
+    <string name="yes_button">はい</string>
+    <string name="no_button">いいえ</string>
+
+    <!-- About game -->
+    <string name="rules_title">ゲームのルール</string>
+    <string name="rules_description">エラー数が最小となるカードのペアを見つけてください。</string>
+    <string name="favorites_description">開いたカードを長押しすると、お気に入りリストに追加されます。</string>
+
+    <string name="pictures_title">画像</string>
+    <string name="graphics_title">グラフィック</string>
+
+    <string name="background_title">背景</string>
+    <string name="black_color">黒</string>
+    <string name="white_color">白</string>
+    <string name="gray_color">グレー</string>
+
+    <string name="material_title">材料</string>
+    <string name="stone_material">腎炎</string>
+    <string name="plastic_material">プラスチック</string>
+    <string name="pattern_material">パターン</string>
+
+    <string name="cards_title">カードの枚数</string>
+    <string name="cards12">12</string>
+    <string name="cards16">16</string>
+    <string name="cards20">20</string>
+    <string name="cards30">30</string>
+
+    <string name="rotation_speed_title">カードを回転させる</string>
+    <string name="lowSpeed">×1</string>
+    <string name="mediumSpeed">×2</string>
+    <string name="fastSpeed">×3</string>
+
+    <!-- Game snackBar -->
+    <string name="add_card_to_favorites_text">お気に入りに追加しました</string>
+    <string name="card_is_already_in_favorites_text">既にお気に入りに追加済み</string>
+    <string name="full_favorites_list">お気に入りリストがいっぱいです</string>
+
+    <!-- Exit dialog -->
+    <string name="exit_dialog_title_pause">一時停止</string>
+    <string name="exit_dialog_text_pause">メインメニューに戻りますか？</string>
+    <string name="exit_dialog_text_statistics">エラー数：</string>
+</resources>

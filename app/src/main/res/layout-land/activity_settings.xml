@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/settingsContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/android:windowBackground"
+    tools:context=".view.activity.SettingsActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/settingsAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="@string/settings"
+        app:titleTextColor="@color/white"
+        app:navigationIconTint="@color/white"
+        app:titleTextAppearance="@style/ToolbarTitleStyle" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mainContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/settingsAppBar"
+        app:layout_constraintBottom_toTopOf="@+id/adsContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/leftContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/rightContainer">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/backgroundContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/materialContainer"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/backgroundTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/background_title"
+                    android:textSize="18sp"
+                    android:textColor="@color/title_text"
+                    android:typeface="sans"
+                    android:layout_marginLeft="4dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/backgroundColorRadioGroup"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <RadioGroup
+                    android:id="@+id/backgroundColorRadioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/backgroundTextView"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/blackRadioButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:paddingLeft="0dp"
+                        android:paddingRight="6dp"
+                        android:minHeight="32dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/black_color"
+                        android:textColor="@color/description_text"
+                        android:textSize="16sp"
+                        android:typeface="sans" />
+
+                    <RadioButton
+                        android:id="@+id/grayRadioButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:paddingLeft="0dp"
+                        android:paddingRight="6dp"
+                        android:minHeight="32dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/gray_color"
+                        android:textColor="@color/description_text"
+                        android:textSize="16sp"
+                        android:typeface="sans" />
+
+                    <RadioButton
+                        android:id="@+id/whiteRadioButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:paddingLeft="0dp"
+                        android:paddingRight="6dp"
+                        android:minHeight="32dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/white_color"
+                        android:textColor="@color/description_text"
+                        android:textSize="16sp"
+                        android:typeface="sans" />
+                </RadioGroup>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:id="@+id/leftDivider"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="@color/divider"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/backgroundContainer"
+                app:layout_constraintBottom_toTopOf="@+id/materialContainer" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/materialContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/backgroundContainer"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/materialTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/material_title"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/title_text"
+                    android:typeface="sans"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/materialRadioGroup"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <RadioGroup
+                    android:id="@+id/materialRadioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/materialTextView"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/stoneRadioButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:paddingLeft="0dp"
+                        android:paddingRight="6dp"
+                        android:minHeight="32dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/stone_material"
+                        android:textColor="@color/description_text"
+                        android:textSize="16sp"
+                        android:typeface="sans" />
+
+                    <RadioButton
+                        android:id="@+id/plasticRadioButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:paddingLeft="0dp"
+                        android:paddingRight="6dp"
+                        android:minHeight="32dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/plastic_material"
+                        android:textColor="@color/description_text"
+                        android:textSize="16sp"
+                        android:typeface="sans" />
+
+                    <RadioButton
+                        android:id="@+id/patternRadioButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:paddingLeft="0dp"
+                        android:paddingRight="6dp"
+                        android:minHeight="32dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/pattern_material"
+                        android:textColor="@color/description_text"
+                        android:textSize="16sp"
+                        android:typeface="sans" />
+                </RadioGroup>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/rightContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/leftContainer"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cardSizeContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/rotationSpeedContainer"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/cardsQuantityTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cards_title"
+                    android:textSize="18sp"
+                    android:textColor="@color/title_text"
+                    android:typeface="sans"
+                    android:layout_marginLeft="4dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/cardsQuantityRadioGroup"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <RadioGroup
+                    android:id="@+id/cardsQuantityRadioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/cardsQuantityTextView"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/lowCardsRadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cards12"
+                        android:paddingLeft="0dp"
+                        android:paddingRight="6dp"
+                        android:minHeight="32dp"
+                        android:textColor="@color/description_text"
+                        android:textSize="16sp"
+                        android:typeface="sans" />
+
+                    <RadioButton
+                        android:id="@+id/mediumCardsRadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cards16"
+                        android:paddingLeft="0dp"
+                        android:paddingRight="6dp"
+                        android:minHeight="32dp"
+                        android:textColor="@color/description_text"
+                        android:textSize="16sp"
+                        android:typeface="sans" />
+
+                    <RadioButton
+                        android:id="@+id/manyCardsRadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cards20"
+                        android:paddingLeft="0dp"
+                        android:paddingRight="6dp"
+                        android:minHeight="32dp"
+                        android:textColor="@color/description_text"
+                        android:textSize="16sp"
+                        android:typeface="sans" />
+
+                    <RadioButton
+                        android:id="@+id/maxCardsRadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cards30"
+                        android:paddingLeft="0dp"
+                        android:paddingRight="6dp"
+                        android:minHeight="32dp"
+                        android:textColor="@color/description_text"
+                        android:textSize="16sp"
+                        android:typeface="sans" />
+                </RadioGroup>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:id="@+id/rightDivider"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="@color/divider"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardSizeContainer"
+                app:layout_constraintBottom_toTopOf="@+id/rotationSpeedContainer" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/rotationSpeedContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/cardSizeContainer"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/rotationSpeedTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rotation_speed_title"
+                    android:textSize="18sp"
+                    android:typeface="sans"
+                    android:textColor="@color/title_text"
+                    android:layout_marginLeft="4dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/rotationSpeedRadioGroup"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <RadioGroup
+                    android:id="@+id/rotationSpeedRadioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/rotationSpeedTextView"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/lowSpeedRadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lowSpeed"
+                        android:paddingLeft="0dp"
+                        android:paddingRight="6dp"
+                        android:minHeight="32dp"
+                        android:textColor="@color/description_text"
+                        android:typeface="sans"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/mediumSpeedRadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mediumSpeed"
+                        android:paddingLeft="0dp"
+                        android:paddingRight="6dp"
+                        android:minHeight="32dp"
+                        android:textColor="@color/description_text"
+                        android:typeface="sans"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/fastSpeedRadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fastSpeed"
+                        android:paddingLeft="0dp"
+                        android:paddingRight="6dp"
+                        android:minHeight="32dp"
+                        android:textColor="@color/description_text"
+                        android:typeface="sans"
+                        android:textSize="16sp" />
+                </RadioGroup>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/adsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/adsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/statistics_cards_head"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    -->
+</androidx.constraintlayout.widget.ConstraintLayout>

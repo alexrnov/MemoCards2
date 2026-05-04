@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Main menu -->
+    <string name="start_game">Oyun</string>
+    <string name="statistics">İstatistikler</string>
+    <string name="settings">Ayarlar</string>
+    <string name="favorites">Favoriler</string>
+    <string name="about_game">Referans</string>
+    <string name="exit">Çıkış</string>
+
+    <!-- Statistics -->
+    <string name="title_date">tarih / saat</string>
+    <string name="title_cards">kartlar</string>
+    <string name="title_errors">hatalar</string>
+    <string name="clear_statistics">temizlemek</string>
+
+    <!-- Statistics dialog -->
+    <string name="statistics_dialog_text">Oyun geçmişini sil?</string>
+    <string name="statistics_empty_text">Henüz oyun yok.</string>
+
+    <!-- Remove card dialog -->
+    <string name="remove_card_dialog_title">Kaldırma</string>
+    <string name="remove_card_dialog_body">Haritayı favorilerden kaldırmak mı istiyorsunuz?</string>
+
+    <string name="yes_button">Evet</string>
+    <string name="no_button">HAYIR</string>
+
+    <!-- About game -->
+    <string name="rules_title">Oyun kuralları</string>
+    <string name="rules_description">En az hata içeren kart çiftlerini bulun.</string>
+    <string name="favorites_description">Açık bir karta uzun süre basılı tutmak, kartı favoriler listenize ekler.</string>
+
+    <string name="pictures_title">Görseller</string>
+    <string name="graphics_title">Grafikler</string>
+
+    <string name="background_title">Arka plan</string>
+    <string name="black_color">Siyah</string>
+    <string name="white_color">Beyaz</string>
+    <string name="gray_color">Gri</string>
+
+    <string name="material_title">Malzeme</string>
+    <string name="stone_material">Nefrit</string>
+    <string name="plastic_material">Plastik</string>
+    <string name="pattern_material">Model</string>
+
+    <string name="cards_title">Kart sayısı</string>
+    <string name="cards12">12</string>
+    <string name="cards16">16</string>
+    <string name="cards20">20</string>
+    <string name="cards30">30</string>
+
+    <string name="rotation_speed_title">Dönüş</string>
+    <string name="lowSpeed">×1</string>
+    <string name="mediumSpeed">×2</string>
+    <string name="fastSpeed">×3</string>
+
+    <!-- Game snackBar -->
+    <string name="add_card_to_favorites_text">Favorilere eklendi</string>
+    <string name="card_is_already_in_favorites_text">Zaten favorilerimde</string>
+    <string name="full_favorites_list">Favoriler listesi dolu.</string>
+
+    <!-- Exit dialog -->
+    <string name="exit_dialog_title_pause">Duraklat</string>
+    <string name="exit_dialog_text_pause">Ana menüye dönmek ister misiniz?</string>
+    <string name="exit_dialog_text_statistics">Hata sayısı:</string>
+</resources>
