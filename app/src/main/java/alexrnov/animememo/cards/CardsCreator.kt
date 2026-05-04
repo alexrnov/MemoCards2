@@ -137,14 +137,13 @@ class CardsCreator {
 	}
 
 	private fun getCardsFromDB(frontPictures: List<String>, ): Set<String> {
-		val backPicture = "back/pattern/1.jpg"
 		val emptyPicture = "empty/1.jpg"
 		val cardsWithPaths: MutableList<String> = mutableListOf()
 		for (i in 0..5) {
 			if (i < frontPictures.size) {
-				cardsWithPaths.add("${i}:${frontPictures[i]}:$backPicture")
+				cardsWithPaths.add("${i}:${frontPictures[i]}:$emptyPicture")
 			} else {
-				cardsWithPaths.add("${i}:$emptyPicture:$backPicture")
+				cardsWithPaths.add("${i}:$emptyPicture:$emptyPicture")
 			}
 		}
 		return cardsWithPaths
