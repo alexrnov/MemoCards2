@@ -47,7 +47,7 @@ class MainActivityTest {
 	@Test
 	fun packageName() {
 		val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-		assertEquals("alexrnov.memocards", appContext.packageName)
+		assertEquals("alexrnov.animememo", appContext.packageName)
 	}
 
 	@Test

@@ -247,7 +247,7 @@ class GameActivity : AppCompatActivity() {
         snackBarView.layoutParams = params
 
         snackBar.setTextColor(Color.argb(255, 255, 255, 255))
-        snackBar.setBackgroundTint(Color.argb(255, 114, 172, 194))
+        snackBar.setBackgroundTint(Color.argb(255, 163, 143, 185))
         snackBar.show()
     }
 
