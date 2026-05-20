@@ -1,4 +1,4 @@
-# Игра мемори Fantasy Memo
+# Игра мемори "Anime Memo"
 
 Меню:
 
